@@ -58,9 +58,7 @@ jobs:
         with:
           args: |
             --test \
-            --aarch64 \
             --amd64 \
-            --armv7 \
             --target . \
             --docker-hub ghcr.io/iPatx
 
@@ -82,8 +80,6 @@ jobs:
       - uses: home-assistant/builder@master
         with:
           args: |
-            --aarch64 \
             --amd64 \
-            --armv7 \
             --target . \
             --docker-hub ghcr.io/iPatx
